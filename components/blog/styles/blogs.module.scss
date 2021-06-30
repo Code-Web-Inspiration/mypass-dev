@@ -1,0 +1,68 @@
+@import '../../../styles/libs/variables.scss';
+@import '../../../styles/libs/responsives.scss';
+
+
+/*--- BLOGS ---*/
+
+.blogs {
+    width: 100%;
+}
+
+.blogs__contents {
+    width: 99%;
+    max-width: 1190px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+
+    .blogsHead {
+        width: inherit;
+    
+        display: flex;
+        align-items: center;
+    
+    
+        .heading {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            padding: .5rem 0;
+      
+            &::after {
+                display: block;
+                content: '';
+                height: 1.5px;
+                width: 40%;
+                background-color: $color;
+                border-radius: 20px;
+                margin-top: .5rem;
+            }
+        }
+    };
+
+    .msg {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .blogsBody {
+        width: 100%;
+        margin: 1rem auto 0;
+        padding: .5rem 0;
+
+        display: grid;
+        grid-row-gap: 3rem;
+
+        @media #{$mobile} {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+        };
+        @media #{$tablet} {
+        grid-template-columns: repeat(3, 1fr);
+        };
+    };
+}

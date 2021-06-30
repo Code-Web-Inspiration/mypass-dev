@@ -1,0 +1,57 @@
+@import '../../../styles/libs/responsives.scss';
+@import '../../../styles/libs/variables.scss';
+
+/*--- NAVBAR ---*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    height: auto;
+    transition: display $duration;
+    background-color: rgba($color: $blue, $alpha: .1);
+
+    z-index: 100000;
+
+    @media #{$mobile} {
+        flex-direction: row;
+    }
+}
+
+.navbarContent {
+    max-width: 900px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: initial;
+}
+
+.navbarLogo {
+    @media #{$mobile} {
+        padding-right: 3rem;
+    }
+    
+    > h2.logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $white;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover {
+            color: lighten($color: $orange, $amount: 10%);
+        }
+        &:active {
+            color: lighten($color: $orange, $amount: 0);
+        }
+    }
+}

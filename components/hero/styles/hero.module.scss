@@ -1,0 +1,73 @@
+@import '../../../styles/libs/variables.scss';
+@import '../../../styles/libs/responsives.scss';
+
+/*--- HERO ---*/
+
+.hero {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    min-height: 400px;
+    margin-bottom: 1rem;
+
+    .imgSlide__box, .awesomeSlider {
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        background-color: $blue;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem 0;
+        width: 100%;
+        z-index: 10000;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*--- HERO CONTENT ---*/
+.content {
+    .title__lead {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: black;
+        max-width: 650px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+
+    .title__sub {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #333;
+        text-align: center;
+        margin-top: 1rem;
+    };
+    
+
+    /*--- HERO FOOTER ---*/
+    .footer {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .button {
+            border-radius: 3px;
+            padding: .7rem 1.0rem;
+            font-size: .8rem;
+            font-weight: 700;
+            color: white;
+        }
+    }
+
+}
+

@@ -1,0 +1,22 @@
+@import '../libs/variables.scss';
+@import '../libs/responsives.scss';
+
+
+/*--- SIGN IN ---*/
+
+.signin {
+    width: 100%;
+    min-height: 100vh;
+    height: 110vh;
+}
+
+
+.submit {
+    background-color: $blue;
+    color: white;
+}
+
+.password__forget {
+    margin-left: auto;
+    font-size: .7rem;
+}

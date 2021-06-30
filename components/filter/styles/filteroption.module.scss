@@ -1,0 +1,34 @@
+
+@import '../../../styles/libs/variables.scss';
+@import '../../../styles/libs/responsives.scss';
+
+
+/**** FILTER OPTIONS ****/
+
+.filter__option,
+.selected {
+    padding: .5rem;
+    cursor: pointer;
+
+    label {
+        display: inline-block;
+        font-size: .9rem;
+        text-transform: capitalize;
+        color: black;
+        font-weight: 500;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+.radio {
+    display: none;
+}
+
+.filter__option:hover {
+    background-color: gray;
+    label {
+        color: white;
+    }
+}
+

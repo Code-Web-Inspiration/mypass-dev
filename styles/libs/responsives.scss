@@ -1,0 +1,22 @@
+
+// SIZES .../
+
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+
+
+
+
+// DEVICES .../
+
+$mobile: 'only screen and (min-width: #{$sm})';
+$tablet: 'only screen and (min-width: #{$md})';
+$laptop: 'only screen and (min-width: #{$lg})';
+$desktop: 'only screen and (min-width: #{$xl})';
+$desktopL: 'only screen and (min-width: #{$xxl})';
+
+

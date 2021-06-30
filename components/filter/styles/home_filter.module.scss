@@ -1,0 +1,29 @@
+@import '../../../styles/libs/variables.scss';
+@import '../../../styles/libs/responsives.scss';
+
+/*--- HOMME FILTER ---*/
+ .homeFilter {
+    padding: 1rem .3rem;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 .2rem gray;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    right: 0;
+    top: 100%;
+
+    .select {
+        background-color: transparent;
+        padding: .4rem;
+        border: 1px solid transparent;
+        outline: none;
+        box-shadow: none;
+        font-size: .9rem;
+        font-weight: 500;
+        flex: 1;
+    }
+ }

@@ -1,0 +1,63 @@
+@import '../../../styles/libs/variables.scss';
+@import '../../../styles/libs/responsives.scss';
+
+/*--- NAVBAR ITEM ---*/
+
+.navbarItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    cursor: pointer;
+
+    color: lightgray;
+
+    .navbarItem__title {
+        font-size: .75rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        visibility: hidden;
+        white-space: nowrap;
+        color: inherit
+    };
+
+    .navbarItem__icon {
+        padding: .5rem;
+        transform: scale(1);
+        transition: color $duration;
+        color: inherit;
+    };
+
+    &:hover .navbarItem__title {
+        visibility: visible;
+        font-weight: 700;
+        color: white;
+    };
+
+    &:hover .navbarItem__icon,
+    .navbarItem__animation {
+        animation: bounce .6s ease-in-out infinite;
+        color: $white;
+        transform: scale(1.2);
+    };
+
+    
+    @media #{$mobile} {
+        width: 50px;
+    };
+}
+
+
+/*--- ANIMATION BOUNCE ---*/
+
+@keyframes bounce {
+    from, to {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.5rem);
+    }
+}
+
+

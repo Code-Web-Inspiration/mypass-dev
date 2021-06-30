@@ -1,0 +1,46 @@
+@import '../../../styles/libs/variables.scss';
+@import '../../../styles/libs/responsives.scss';
+
+
+/**** SINGLE DETAIL ****/
+
+.description__left__section {
+    grid-column: 1 / span 1;
+    width: 100%;
+};
+
+.description__left__card {
+    max-width: 600px;
+    width: 100%;
+
+    &:not(&:nth-of-type(1)) {
+        margin-top: 2rem;
+    }
+}
+
+.description_event__heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+};
+
+.description__event__desc__text {
+    font-size: .85rem;
+    font-weight: 500;
+    line-height: 1.8;
+};
+
+.description__event__hours__box {
+    display: flex;
+    flex-direction: column;
+
+    .description__event__hours {
+        display: inline-block;
+
+        font-size: .85rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: .5rem;
+    };
+};

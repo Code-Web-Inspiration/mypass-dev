@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+.button {
+    border: .5px solid transparent;
+    outline: none;
+    box-shadow: none;
+
+    display: inline-block;
+    font-family: inherit;
+    text-transform: uppercase;
+    background-color: lighten($color: $blue, $amount: 10%);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active {
+        background-color: lighten($color: $blue, $amount: 0);
+    }
+}
+
+
